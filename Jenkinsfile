@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //Aquí debes poner tu repositorio de dockerhub
-		sh 'docker build -t peseca/ejemplodockerhub . '
+		sh 'docker build -t alucal1355/dockerhubscalvo . '
             }
         }
         stage('DockerHUB Login') {
@@ -25,7 +25,7 @@ pipeline {
         stage('Docker Push') {
             steps {
 		//Aquí debes poner tu DockerHub
-                sh 'docker push peseca/ejemplodockerhub'
+                sh 'docker push alucal1355/dockerhubscalvo'
                 }
             }
         }
